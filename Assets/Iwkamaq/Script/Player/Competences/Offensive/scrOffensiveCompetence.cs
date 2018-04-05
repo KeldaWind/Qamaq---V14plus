@@ -12,7 +12,7 @@ public class scrOffensiveCompetence : MonoBehaviour
     public float lightningMaxDamages;
 
     [Header("Competences Visuals")]
-
+    public GameObject globeLightningShot;
 
     [Header("Cooldowns")]
     public float cooldown;
@@ -55,13 +55,17 @@ public class scrOffensiveCompetence : MonoBehaviour
     {
         //ce qu'il se passe au lancement de la compétence
 
-        Vector3 lightningPos = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).z);
+        Vector3 lightningPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        lightningPos.y = 0;
 
         currentCooldown = cooldown;
 
         GameObject lightning = (GameObject)Instantiate(lightningPrefab, lightningPos, transform.rotation);
 
         lightning.GetComponent<scrOffensiveCompetenceLightning>().lightningMaxDamages = lightningMaxDamages;
+
+        //Instantiate(globeLightningShot, GetComponentInChildren<scrGlobeMovement>().gameObject.transform.position, new Quaternion(0, 0.7f, -0.7f, 0));
     }
 
     void AnimationUpdate()

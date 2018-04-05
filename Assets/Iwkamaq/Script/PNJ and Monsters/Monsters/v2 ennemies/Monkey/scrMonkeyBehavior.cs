@@ -45,6 +45,11 @@ public class scrMonkeyBehavior : MonoBehaviour {
     [Header("Stun")]
     public bool stun;
 
+	[Header ("FX")]
+	public GameObject hitParticles;
+	public GameObject deathParticles;
+
+
 	//Création 26 mars 2018
 	// Modification 28 mars 2018 Ajout ChaseState => Working \\ Objectif => Attack State, Fleeing State, Special Attack State
 
@@ -57,10 +62,10 @@ public class scrMonkeyBehavior : MonoBehaviour {
 		idle = false;
 		speed = 75;
 		detectDistance = 12;
-		distance = 25;
+		distance = 15;
 		attackDistance = 8;
 		currentCooldown = 0;
-		Cooldownmin = 2;
+		Cooldownmin = 1;
 		Cooldownmax = 4;
 		attackDuration = 0.5f;
 	}

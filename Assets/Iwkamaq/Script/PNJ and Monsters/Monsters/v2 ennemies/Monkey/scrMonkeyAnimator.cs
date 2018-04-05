@@ -8,8 +8,10 @@ public class scrMonkeyAnimator : MonoBehaviour {
     Animator monkeyAnimator;
     SpriteRenderer monkeyRenderer;
 
+
     private void Start()
     {
+		
         monkeyAnimator = GetComponent<Animator>();
         monkeyRenderer = GetComponent<SpriteRenderer>();
     }
@@ -71,10 +73,17 @@ public class scrMonkeyAnimator : MonoBehaviour {
         //stun
         if (!GetComponent<scrMonkeyBehavior>().stunedToTheGround)
         {
-            if (GetComponent<scrMonkeyBehavior>().stun)
-                monkeyAnimator.SetBool("stun", true);
+			if (GetComponent<scrMonkeyBehavior> ().stun) {
+				monkeyAnimator.SetBool ("stun", true);
+
+				 
+			}
+			
+			
             else
                 monkeyAnimator.SetBool("stun", false);
+			    
+			
         }
         if (GetComponent<scrMonkeyBehavior>().stunedToTheGround)
         {

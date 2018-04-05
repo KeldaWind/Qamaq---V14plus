@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4574605797597104}
   - component: {fileID: 198824485742128208}
   - component: {fileID: 199583778884907618}
-  - component: {fileID: 114034300374298228}
+  - component: {fileID: 114117999111623574}
   m_Layer: 10
   m_Name: MoyenBurstMortEpsilon
   m_TagString: Untagged
@@ -42,7 +42,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &114034300374298228
+--- !u!114 &114117999111623574
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -50,10 +50,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1945244207178030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6733850acf54be841948941d8a322c36, type: 3}
+  m_Script: {fileID: 11500000, guid: f5c1df2b969f3b340ab60449dfcb5143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 1
 --- !u!198 &198824485742128208
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -64,7 +63,7 @@ ParticleSystem:
   lengthInSec: 5.77
   simulationSpeed: 1.6
   stopAction: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0

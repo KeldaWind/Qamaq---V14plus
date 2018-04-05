@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Iwkamaq\Script\Player\Competences\Offensive\scrOffensiveCompetence.cs">
+    <Files>
+      <File FileName="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\v2 ennemies\Monkey\scrMonkeyBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\v2 ennemies\Monkey\scrMonkeyAnimator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Iwkamaq\Script\Player\scrPlayerPunchUpdate.cs" Line="1" Column="1" />
+      <File FileName="Assets\Iwkamaq\Script\Player\Competences\Dash\scrDash.cs" Line="1" Column="1" />
+      <File FileName="Assets\Iwkamaq\Script\General\Fight\scrObjectLife.cs" Line="64" Column="3" />
+      <File FileName="Assets\Iwkamaq\Script\Player\Competences\Offensive\scrOffensiveCompetence.cs" Line="68" Column="11" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -14,6 +14,7 @@ public class scrPlayerAnimation : MonoBehaviour {
 
     [Header("Player Reflect")]
     public SpriteRenderer reflectRenderer;
+	public Animator reflectAnimator;
 
     private void Start()
     {
@@ -27,7 +28,7 @@ public class scrPlayerAnimation : MonoBehaviour {
     {
         InCompetenceMenu();
 
-        ReflectUpdate();
+   
 
         if(!GetComponentInParent<scrPlayerPaused>().playerPaused)
             AnimationUpdate();
@@ -35,14 +36,17 @@ public class scrPlayerAnimation : MonoBehaviour {
 
     void ReflectUpdate()
     {
-        reflectRenderer.sprite = playerRenderer.sprite;
+       
+
+	
+
     }
 
     void AnimationUpdate()
     {
         //on initialise la vitesse de l'animator
         playerAnimator.speed = 1;
-
+		reflectAnimator.speed = 1;
         #region animation de marche
         if (!GetComponentInParent<scrPlayerPunchUpdate>().punching && !GetComponentInParent<scrDash>().dashing && !GetComponentInParent<scrPlayerKnockBack>().knockbacked)
         {

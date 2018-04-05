@@ -17,6 +17,14 @@ public class scrObjectLife : MonoBehaviour {
     [Header("Experience")]
     public int enemyExperience;
 
+	[Header ("Feedback")]
+	public GameObject Player;
+	public GameObject deathParticlesSmall;
+	public GameObject deathParticlesMedium;
+	public GameObject deathParticlesBig;
+	private float shakeAmount ;
+	private float shakeDuration ;
+
 	// Use this for initialization
 	void Start () {
         currentLife = maxLife;
@@ -47,9 +55,23 @@ public class scrObjectLife : MonoBehaviour {
     {
         dead = true;
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
 
         scrPlayerExperience.PlayerExperience.GainExperience(enemyExperience);
+		if (maxLife <= 50) {
+			
+			scrCameraGlobalMovement.CameraManager.GetComponent<Screenshake> ().shakeAmount = 0.3f;
+			scrCameraGlobalMovement.CameraManager.GetComponent<Screenshake> ().shakeDuration = 0.1f;
+			Instantiate(deathParticlesSmall, transform.position, new Quaternion(-transform.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w));
+		}
+
+		if (maxLife <= 250 && maxLife>50) {
+
+			scrCameraGlobalMovement.CameraManager.GetComponent<Screenshake> ().shakeAmount = 0.5f;
+			scrCameraGlobalMovement.CameraManager.GetComponent<Screenshake> ().shakeDuration = 0.2f;
+			Instantiate(deathParticlesMedium, transform.position, new Quaternion(-transform.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w));
+		}
+
 
         Destroy(transform.parent.gameObject);
     }

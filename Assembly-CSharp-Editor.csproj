@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BCF97A86-4FB5-74DF-FD1A-FD1B52B6E35D}</ProjectGuid>
+    <ProjectGuid>{2711D1FC-C32F-E7D6-5B49-BFD4FD96419F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -96,9 +96,14 @@
      <Compile Include="Assets\Iwkamaq\Particles\Jul\ScriptsJul\AssetsKino\Klak\Motion\Editor\BrownianMotionEditor.cs" />
      <Compile Include="Assets\Iwkamaq\Particles\Jul\ScriptsJul\AssetsKino\Klak\Motion\Editor\ConstantMotionEditor.cs" />
      <Compile Include="Assets\Iwkamaq\Particles\Jul\ScriptsJul\ShaderEau\Water2D Surface\scripts\Editor\MeshRendererEditor.cs" />
-     <Compile Include="Assets\Laspa_02\Rule tile\Scripts\Rule Tile\Scripts\Editor\RuleTileEditor.cs" />
+     <Compile Include="Assets\World_Building\zTools_Brushes_Tilemap\Scripts_Brushes\Coordinate Brush\Scripts\Editor\CoordinateBrush.cs" />
+     <Compile Include="Assets\World_Building\zTools_Brushes_Tilemap\Scripts_Brushes\Line Brush\Scripts\Editor\LineBrush.cs" />
+     <Compile Include="Assets\World_Building\zTools_Brushes_Tilemap\Scripts_Brushes\Prefab Brush\Scripts\Editor\PrefabBrush.cs" />
+     <Compile Include="Assets\World_Building\zTools_Brushes_Tilemap\Scripts_Brushes\Random Brush\Scripts\Editor\RandomBrush.cs" />
+     <Compile Include="Assets\World_Building\zTools_Brushes_Tilemap\Scripts_Brushes\Tint Brush\Scripts\Editor\TintBrush.cs" />
+     <Compile Include="Assets\World_Building\zTools_RuleTile_Tilemap\Scripts\Editor\RuleTileEditor.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/LeNomDutilisateur/Desktop/Iwkamaq/Zelda-Like - Iwkamaq v12.1.4 - presque prêt pour la prez/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/LeNomDutilisateur/Desktop/Iwkamaq/Qamaq-master - v14.1.3/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -187,7 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{A7FC945C-13EB-8485-13AE-09516E9DEE0F}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{536B345E-9609-8F16-6F9F-15838D41BFF7}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

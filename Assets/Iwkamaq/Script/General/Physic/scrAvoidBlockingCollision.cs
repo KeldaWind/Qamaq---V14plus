@@ -38,7 +38,6 @@ public class scrAvoidBlockingCollision : MonoBehaviour
                 if (collision.gameObject.GetComponent<CapsuleCollider>() != null)
                 {
                     collisionCenter = new Vector3(collision.transform.position.x + collision.transform.localScale.x * collision.gameObject.GetComponent<CapsuleCollider>().center.x, 0, collision.transform.position.z + collision.transform.localScale.y * collision.gameObject.GetComponent<CapsuleCollider>().center.y);
-                    Debug.Log(collisionCenter);
 
                     Vector3 capsuleCenterCollider = new Vector3(Mathf.Clamp(collision.gameObject.GetComponent<CapsuleCollider>().height - collision.gameObject.GetComponent<CapsuleCollider>().radius * 2, 0, Mathf.Infinity), 0.2f, collision.gameObject.GetComponent<CapsuleCollider>().radius * 2);
 

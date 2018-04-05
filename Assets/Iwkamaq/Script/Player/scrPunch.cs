@@ -6,6 +6,7 @@ public class scrPunch : MonoBehaviour {
 
     public float punchKnockbackForce;
     public float punchStunDuration;
+	public GameObject hitParticles;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,6 +18,9 @@ public class scrPunch : MonoBehaviour {
                 {
                     other.GetComponent<scrObjectLife>().currentLife -= GetPlayerPunchDamages();
                     other.GetComponent<scrObjectLife>().currentRecoveringTime = other.GetComponent<scrObjectLife>().recoveringTime;
+					//Instantiate(hitParticles, other.transform, new Quaternion(-transform.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w));
+					//position : other.transform
+					//rotation : other.getComponent<Rigidbody>().velocity * other.transform.rotation;
                 }
             }
 

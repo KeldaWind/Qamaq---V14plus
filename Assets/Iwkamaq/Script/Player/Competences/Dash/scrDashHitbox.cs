@@ -19,7 +19,8 @@ public class scrDashHitbox : MonoBehaviour {
                     other.GetComponent<scrObjectLife>().currentRecoveringTime = other.GetComponent<scrObjectLife>().recoveringTime;
                     scrCameraGlobalMovement.CameraManager.SetCameraShake("both", GetComponentInParent<scrDash>().dashShakeAmount, GetComponentInParent<scrDash>().dashShakeDuration);
                     GetComponentInParent<scrDash>().currentCooldown -= cooldownReductionIfHit;
-                    Debug.Log(GetComponentInParent<scrDash>().currentCooldown);
+                    StartCoroutine(GetComponentInParent<scrTimeStop>().StopTime());
+                    //GetComponentInParent<scrSlowMo>().SetSlowMo(0.05f, 1f);
                 }                
             }
 

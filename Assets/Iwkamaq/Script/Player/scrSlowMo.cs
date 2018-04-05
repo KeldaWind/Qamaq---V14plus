@@ -17,6 +17,7 @@ public class scrSlowMo : MonoBehaviour {
 
     void SlowMoUpdate()
     {
+        Debug.Log(Time.timeScale);
         //lancement du slowMo
         if (slowMoOn && Time.timeScale == 1)
         {
@@ -43,5 +44,5 @@ public class scrSlowMo : MonoBehaviour {
         currentSlowMoDuration = slowMoDuration;
         slowMoOn = true;
     }
-
+        
 }

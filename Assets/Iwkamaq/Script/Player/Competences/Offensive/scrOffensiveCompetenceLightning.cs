@@ -26,12 +26,17 @@ public class scrOffensiveCompetenceLightning : MonoBehaviour {
     public float lightningShakeAmount;
     public float lightningShakeDuration;
 
+    public GameObject[] lightningResiduals;
+    public GameObject lightningImpactSmoke;
+    public GameObject lightningRemainingRift;
+
 	void Start () {
         totalLifeTime = lifeTime;
         GetComponent<SphereCollider>().enabled = false;
         lightningAnimator = GetComponent<Animator>();
         lifeTimeStarted = false;
         totalStartingDelay = startingDelay;
+        StartCoroutine(SpawningRandomLightnings());
     }
 	
 	void Update () {
@@ -42,7 +47,6 @@ public class scrOffensiveCompetenceLightning : MonoBehaviour {
 
         if(!scrCompetenceMenu.CompetenceMenu.inCompetenceMenu)
             LaunchingLightning();
-
     }
 
     void LifeTimeUpdate()
@@ -87,7 +91,21 @@ public class scrOffensiveCompetenceLightning : MonoBehaviour {
             lifeTimeStarted = true;
 
             scrCameraGlobalMovement.CameraManager.SetCameraShake("vertical", lightningShakeAmount, lightningShakeDuration);
+
+            Instantiate(lightningImpactSmoke, transform.position, transform.rotation);
+
+            Instantiate(lightningRemainingRift, transform.position, transform.rotation);
         }
+    }
+
+    IEnumerator SpawningRandomLightnings()
+    {
+        Instantiate(lightningResiduals[Random.Range(0, lightningResiduals.Length)], transform.position + new Vector3(Random.Range(-startingDelay * 8, startingDelay * 8), 0, Random.Range(-startingDelay * 8, startingDelay * 8)), transform.rotation);
+
+        yield return new WaitForSeconds(Random.Range(0.03f, 0.05f));
+
+        if(!lifeTimeStarted)
+            StartCoroutine(SpawningRandomLightnings());
     }
 
     void OnTriggerEnter(Collider other)

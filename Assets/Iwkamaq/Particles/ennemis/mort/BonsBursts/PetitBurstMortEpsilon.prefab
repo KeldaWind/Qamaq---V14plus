@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4798223153072448}
   - component: {fileID: 198207087068822800}
   - component: {fileID: 199770959754585618}
+  - component: {fileID: 114425263183583016}
   m_Layer: 10
   m_Name: PetitBurstMortEpsilon
   m_TagString: Untagged
@@ -41,6 +42,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -180.616, y: -0.0039978027, z: -0.3289795}
+--- !u!114 &114425263183583016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1972898471104166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c1df2b969f3b340ab60449dfcb5143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198207087068822800
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -51,7 +63,7 @@ ParticleSystem:
   lengthInSec: 5.77
   simulationSpeed: 1.2
   stopAction: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A7FC945C-13EB-8485-13AE-09516E9DEE0F}</ProjectGuid>
+    <ProjectGuid>{536B345E-9609-8F16-6F9F-15838D41BFF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Iwkamaq\Particles\Jul\Jul_A_Ranger\DamageDesaturation.cs" />
+     <Compile Include="Assets\Iwkamaq\Particles\Jul\ParticlesPostMars\ParticlesPostMars\ParticleDestroyScript.cs" />
      <Compile Include="Assets\Iwkamaq\Particles\Jul\PostProcess\Post Effect Mask\Scripts\PostEffectMask.cs" />
      <Compile Include="Assets\Iwkamaq\Particles\Jul\PostProcess\Post Effect Mask\Scripts\PostEffectMaskRenderer.cs" />
      <Compile Include="Assets\Iwkamaq\Particles\Jul\PostProcess\PostProcessing\PixelBoy.cs" />
@@ -115,6 +117,13 @@
      <Compile Include="Assets\Iwkamaq\Particles\Jul\ScriptsJul\ShaderEau\MirrorReflection.cs" />
      <Compile Include="Assets\Iwkamaq\Particles\Jul\ScriptsJul\ShaderEau\Water2D Surface\scripts\Water2DScript.cs" />
      <Compile Include="Assets\Iwkamaq\Particles\Jul\ScriptsJul\ShaderEau\Water2D Surface\scripts\WaterReflectableScript.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Camera\scrCamera.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Camera\scrCameraEventMovement.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Camera\scrCameraGlobalMovement.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Camera\scrCameraManualMovement.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Camera\scrCameraPlayerMovement.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Camera\scrCameraShake.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Camera\scrCameraSize.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Environment\scrBush.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Environment\ScrFruit.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Environment\scrLittleRock.cs" />
@@ -126,6 +135,16 @@
      <Compile Include="Assets\Iwkamaq\Script\Events\Arena\ScrTimerControler.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Events\Arena\scrWaveManager.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Events\scrEventManager.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Environment\scrGetSpriteMask.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Environment\scrObjectReflect.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Fight\scrObjectKnockback.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Fight\scrObjectLife.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Fight\scrObjectStun.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Physic\scrAvoidBlockingCollision.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Shake\Screenshake.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Shake\ScreenshakeHorizontal.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Shake\ScreenshakeVertical.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\General\Visuals\scrDestroyOnAnimationEnd.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Buttons\scrBoostButton.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Buttons\scrButtonFeedback.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Buttons\scrHeavenlyLightningButton.cs" />
@@ -133,34 +152,63 @@
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Buttons\scrTotemButton.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Buttons\scrVendettaSphereButton.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Buttons\scrYamtaLightningButton.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Dash\scrDash.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Dash\scrDashHitbox.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Dash\scrDashTrace.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Defense\scrDefensiveCompetence.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Defense\scrDefensiveCompetenceExplosion.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Offensive\scrOffensiveCompetence.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Offensive\scrOffensiveCompetenceLightning.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Offensive\Visual Prefabs\scrGlobeLightningShot.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\Offensive\Visual Prefabs\scrLightningRemainingRift.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\scrCompetenceManager.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\scrCompetenceMenu.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\scrCompetenceUnlocker.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\Competences\scrExperienceManager.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\scrLightningManager.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\scrPlayerLightning.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\Competences\scrTauntingSummon.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\feedbacks\globe\scrGlobe.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\feedbacks\scrBoostSorting.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\feedbacks\scrPlayerGlow.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\feedbacks\scrProtectionSphereSorting.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\feedbacks\scrRedMaskDamages.cs" />
-     <Compile Include="Assets\Iwkamaq\Script\Player\scrBoostSorting.cs" />
-     <Compile Include="Assets\Iwkamaq\Script\Player\scrExperienceManager.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrDamageSaturation.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrGlobeMovement.cs" />
      <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayer.cs" />
-     <Compile Include="Assets\Iwkamaq\Script\Player\scrProtectionSphereSorting.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerAnimation.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerDamagesTaker.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerExperience.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerGlobalCooldown.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerKnockBack.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerLife.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerLookingDirection.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerMovementUpdate.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerPaused.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerPunchUpdate.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPlayerStun.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrPunch.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrRespawn.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Player\scrSlowMo.cs" />
      <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\scrEnemyBase.cs" />
      <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\scrEnemyManager.cs" />
      <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\scrGorilla.cs" />
      <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\scrGorillaRock.cs" />
      <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\scrInsectBehavior.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\scrTestEnemy.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\v2 ennemies\Monkey\scrMonkeyAnimator.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\v2 ennemies\Monkey\scrMonkeyBehavior.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\Monsters\v2 ennemies\Monkey\scrMonkeyHitbox.cs" />
      <Compile Include="Assets\Iwkamaq\Script\PNJ and Monsters\PNJs\ScrLama.cs" />
      <Compile Include="Assets\Iwkamaq\Script\SceneManagement\scrCheckpoint.cs" />
      <Compile Include="Assets\Iwkamaq\Script\SceneManagement\scrCheckPointManager.cs" />
-     <Compile Include="Assets\Iwkamaq\Script\scrCamera.cs" />
      <Compile Include="Assets\Iwkamaq\Script\scrDamagesManager.cs" />
-     <Compile Include="Assets\Iwkamaq\Script\Screenshake.cs" />
-     <Compile Include="Assets\Iwkamaq\Script\ScreenshakeHorizontal.cs" />
-     <Compile Include="Assets\Iwkamaq\Script\ScreenshakeVertical.cs" />
      <Compile Include="Assets\Iwkamaq\Script\scrLifeTime.cs" />
      <Compile Include="Assets\Iwkamaq\Script\scrOrderInLayer.cs" />
      <Compile Include="Assets\Iwkamaq\Script\scrTutorialTextManager.cs" />
-     <Compile Include="Assets\Laspa_02\Rule tile\Scripts\Rule Tile\Scripts\RuleTile.cs" />
-     <Compile Include="Assets\Random\DamageDesaturation.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Tests\scrGetCapsuleColliderRectangleDimension.cs" />
+     <Compile Include="Assets\Iwkamaq\Script\Tests\scrGetCompInParentTest.cs" />
+     <Compile Include="Assets\World_Building\zTools_RuleTile_Tilemap\Scripts\RuleTile.cs" />
      <None Include="Assets\Iwkamaq\Particles\Jul\PostProcess\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Iwkamaq\Particles\Jul\ScriptsJul\AssetsKino\sIBL Archive\Acknowledgement.txt" />
      <None Include="Assets\Iwkamaq\Particles\Jul\ScriptsJul\ShaderEau\Mirror.shader" />
@@ -229,7 +277,7 @@
      <None Include="Assets\Iwkamaq\Particles\Jul\PostProcess\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
      <None Include="Assets\Iwkamaq\Particles\Jul\PostProcess\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/LeNomDutilisateur/Desktop/Iwkamaq/Zelda-Like - Iwkamaq v12.1.4 - presque prêt pour la prez/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/LeNomDutilisateur/Desktop/Iwkamaq/Qamaq-master - v14.1.3/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

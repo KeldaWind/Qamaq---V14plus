@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qamaq-master - v14.1.3", "Assembly-CSharp.csproj", "{536B345E-9609-8F16-6F9F-15838D41BFF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qamaq-master - v14.1.3", "Assembly-CSharp-Editor.csproj", "{2711D1FC-C32F-E7D6-5B49-BFD4FD96419F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{536B345E-9609-8F16-6F9F-15838D41BFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{536B345E-9609-8F16-6F9F-15838D41BFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{536B345E-9609-8F16-6F9F-15838D41BFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{536B345E-9609-8F16-6F9F-15838D41BFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2711D1FC-C32F-E7D6-5B49-BFD4FD96419F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2711D1FC-C32F-E7D6-5B49-BFD4FD96419F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2711D1FC-C32F-E7D6-5B49-BFD4FD96419F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2711D1FC-C32F-E7D6-5B49-BFD4FD96419F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
